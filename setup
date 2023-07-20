@@ -1,0 +1,17 @@
+from setuptools import setup
+
+setup(
+    name="ETLApp",
+    version="0.1",
+    packages=["."],
+    install_requires=[
+        "pyspark",
+        "requests",
+        "mysql-connector-python"
+    ],
+    entry_points={
+        "console_scripts": [
+            "etl = etl:main",
+        ]
+    }
+)
